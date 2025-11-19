@@ -6,6 +6,7 @@ export type Project = {
   stack: string[];
   shortDescription: string;
   coverImage: string;
+  listImage: string;
   overview: string;
   features: string[];
   gallery: { src: string; alt: string }[];
@@ -22,6 +23,7 @@ export const projects: Project[] = [
     shortDescription:
       "A recruitment tool that automates hiring, uploads CVs & JDs with GDPR compliance, extracts data using AI, and manages candidates.",
     coverImage: "/projects/hirespark/cover.png",
+    listImage: "/projects/hirespark/list.png",
     overview:
       "A full-stack recruitment tool to automate hiring. Upload CVs, extract data using AI, and manage candidates with GDPR compliance. Built with React (frontend) and FastAPI (backend). Includes smart summaries, SendGrid emails, and optional Gmail API support.",
     features: [
@@ -51,6 +53,7 @@ export const projects: Project[] = [
     shortDescription:
       "A clean, accessible website layout tailored for optometry services, with a contact and booking page featuring a large interactive calendar.",
     coverImage: "/projects/angeloptic/cover.png",
+    listImage: "/projects/angeloptic/cover-details.png",
     overview:
       "AngelOptic is a modern, accessible website concept for an optician brand. The layout focuses on clarity, accessibility and easy appointment booking.",
     features: [

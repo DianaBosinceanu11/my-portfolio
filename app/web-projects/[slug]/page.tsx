@@ -24,14 +24,14 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <section className="space-y-12">
       {/* Hero cu mockup (laptop) */}
       <div className="flex flex-col items-center text-center gap-6">
-        <div className="relative w-full max-w-4xl aspect-[16/9] rounded-[32px] overflow-hidden bg-[radial-gradient(circle_at_top,_rgba(34,211,238,0.25),_transparent_60%)]">
-          <Image
-            src={project.coverImage}
+        <div className="relative w-full max-w-2xl aspect-video rounded-4xl overflow-hidden bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.25),transparent_60%)]">
+            <Image
+            src={project.listImage}   // înainte era coverImage
             alt={project.title}
             fill
             className="object-contain"
             sizes="800px"
-          />
+            />
         </div>
 
         <div className="space-y-2">
