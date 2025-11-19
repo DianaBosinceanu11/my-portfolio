@@ -24,15 +24,25 @@ export default async function ProjectPage({ params }: ProjectPageProps) {
     <section className="space-y-12">
       {/* Hero cu mockup (laptop) */}
       <div className="flex flex-col items-center text-center gap-6">
-        <div className="relative w-full max-w-2xl aspect-video rounded-4xl overflow-hidden bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.25),transparent_60%)]">
+        <div className="relative w-full max-w-2xl mx-auto mt-10">
+        {/* Halo Glow – suprapus și niciodată tăiat */}
+        <div className="pointer-events-none absolute inset-0 -top-20 -bottom-10 -left-10 -right-10 
+                        rounded-[50%] bg-[radial-gradient(circle,rgba(34,211,238,0.35),transparent_70%)] 
+                        blur-2xl" />
+
+        {/* Container imagine */}
+        <div className="relative w-full aspect-video rounded-4xl overflow-visible">
             <Image
-            src={project.listImage}   // înainte era coverImage
+            src={project.listImage}
             alt={project.title}
             fill
             className="object-contain"
-            sizes="800px"
+            sizes="900px"
             />
         </div>
+        </div>
+
+
 
         <div className="space-y-2">
           <h1 className="text-3xl md:text-4xl font-semibold text-slate-50">
